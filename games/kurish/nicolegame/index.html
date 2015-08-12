@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nostalgia the Game</title>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	
+	<script type="text/javascript" src="lib/impact/impact.js"></script>
+	<script type="text/javascript" src="lib/game/main.js"></script>
+</head>
+
+<body id="nostalgia" class="desktop webgl">
+	<div class="panelDesktopOnly">
+		<h1>
+			Game using the 
+			<a href="http://github.com/phoboslab/twopointfive">TwoPointFive Plugin</a> 
+			for
+			<a href="http://impactjs.com/">Impact</a>
+		</h1>
+	</div>
+
+	<div id="game" class="webgl-only">
+		<canvas id="canvas" class="landscape-only"></canvas>
+
+		<div id="rotate-to-play" class="mobile-only portrait-only">
+			<div><img src="media/rotate.png"/></div>
+			Rotate to Landscape to play!
+		</div>
+		<div id="statement">
+			<p>Nostalgia is a first-person shooter, made with the engine ImpactJS using the TwoPointFive plugin.  The game is more about the aesthetic experience, so right now there is no final objective.  My theme is 90's nostalgia, and I incorporated things that symbolized adolescence during that period: Barney, the Teletubbies, Flintstones vitamins, and Tamagotchis.  My inspiration for Nostalgia came from watching my dad play a first-person shooter when I was young.  For me, the girl who follows the shooter represents me watching my dad play.  From an outside perspective, the girl is a reflection of the shooter as a child. Shoot, watch, whichever you want. </p>
+		</div>
+		<!--<div class="panel desktop-only">
+			<div class="option">
+				<input type="checkbox" id="requestFullscreen"/>
+				<label for="requestFullscreen"><span></span>Fullscreen</label>
+			</div>-->
+			<!--<div class="option">
+				<input id="riftStereoMode"/>
+				<label for="riftStereoMode"></label>
+				– requires the <a href="http://blog.tojicode.com/2014/07/bringing-vr-to-chrome.html">Chrome WebVR Build</a>
+			</div>-->
+		</div>		
+	</div>
+
+	<div class="no-webgl-only">
+		<div id="no-webgl-notice" class="panel">
+			<p>
+				Your browser does not support WebGL. Try 
+				<a href="http://www.google.com/chrome">Chrome</a> or
+				<a href="http://www.mozilla.com/firefox/">Firefox</a>.
+			</p>
+			<p>
+				Mobile Safari has WebGL support in iOS 8
+			</p>
+		</div>
+	</div>
+
+</body>
+</html>
