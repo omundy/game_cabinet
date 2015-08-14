@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-
+/*
 
     var pane = $('#homescreen'),
     box = $('#box'),
@@ -94,5 +94,7 @@ $( document ).ready(function() {
             return true;
         }
     }
+
+    */
 
 });
