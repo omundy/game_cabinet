@@ -7,7 +7,9 @@
 
 $( document ).ready(function() {
 
-  if (window.location.href.indexOf('localhost') > -1){
+
+
+  //if (window.location.href.indexOf('localhost') > -1){
 
     console.log('key listener extension starting on localhost');
 
@@ -20,15 +22,13 @@ $( document ).ready(function() {
       if (e.keyCode) {
         console.log("key pressed: "+ e.keyCode)
 
-        // black button 1
+        // black button 1 = #1 on keyboard
         if (e.keyCode == 49) {
-          console.log('1')
           // go to home
-          window.location.href = 'http://localhost/';
+          window.location.href = 'http://localhost/~gamer/';
         }
-        // black button 2
+        // black button 2 = #2 on keyboard
         else if (e.keyCode == 50) {
-          console.log('2')
           // reset current game by reloading the page
           location.reload();
         }
@@ -36,7 +36,7 @@ $( document ).ready(function() {
     }
 
 
-
+    /*
 
 
     if (window.location.href.indexOf('http://localhost/web.art.fsu.edu/www/') > -1
@@ -64,10 +64,6 @@ $( document ).ready(function() {
           x = 7,
           currentLink = -1;
 
-
-
-
-console.log(box )
 
 
 
@@ -101,7 +97,7 @@ console.log(box )
             }
         });
 
-/*
+
         // check to see if there is a collision
         if ( collision( box, $('#game0') )) {
             currentLink = 0;
@@ -118,7 +114,7 @@ console.log(box )
         } else {
             currentLink = -1;
         }
-*/        $('#status').html(currentLink);
+        $('#status').html(currentLink);
 
 
     }, 20);
@@ -140,7 +136,7 @@ console.log(box )
             win.focus();
         }
     }
-/*
+
 
     // test collision
     function collision($div1, $div2) {
@@ -164,7 +160,10 @@ console.log(box )
     }
     */
 
-  }
+//}
 
-}
+
+
+
+
 });

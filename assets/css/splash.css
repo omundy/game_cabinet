@@ -23,4 +23,11 @@ body {
   width:48%;
   margin: 15px 0 0 15px 
 }
-
+.col {
+  float: left;
+  width:47%;
+  margin: 15px 15px 0 15px;
+  font: 1.5em/1.85em Arial;
+  color: #fff;
+  text-align: left;
+}
